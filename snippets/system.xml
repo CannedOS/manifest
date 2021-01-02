@@ -8,6 +8,6 @@
   <project path="system/vold" name="system_vold" remote="canned" revision="eleven" />
   <project path="system/update_engine" name="system_update_engine" remote="canned" revision="eleven" />
   <project path="system/bt" name="android_system_bt" remote="common" />
-  <project path="system/qcom" name="system_qcom" remote="lineage" revision="lineage-18.1" />
+  <project path="system/qcom" name="android_system_qcom" remote="lineage" revision="lineage-18.1" />
 
 </manifest>

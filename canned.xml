@@ -15,7 +15,7 @@
 
   <!-- LegionOS remote -->
   <remote name="legion"
-          fetch="https://github.com/LegionOS"
+          fetch="https://github.com/Project-LegionOS"
           revision="refs/heads/11"
           sync-j="8" />
 
