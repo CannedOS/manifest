@@ -46,7 +46,7 @@ $ make canned
  Credits:
  =======
 
- * [**AOSP[**](https://github.com/AOSP)
+ * [**AOSP**](https://github.com/AOSP)
  * [**LineageOS**](https://github.com/LineageOS)
  * [**LegionOS**](https://github.com/Project-LegionOS)
  * [**ManyMore from where cherry-picked from**](https://github.com)
