@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	
+  <project path="system/core" name="system_core" remote="canned" revision="eleven" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="canned" revision="eleven" />
+  <project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="canned" revision="eleven" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="canned" revision="eleven" />
+  <project path="system/vold" name="system_vold" remote="canned" revision="eleven" />
+  <project path="system/update_engine" name="system_update_engine" remote="canned" revision="eleven" />
+  <project path="system/bt" name="android_system_bt" remote="common" />
+  <project path="system/qcom" name="system_qcom" remote="lineage" revision="lineage-18.1" />
+
+</manifest>

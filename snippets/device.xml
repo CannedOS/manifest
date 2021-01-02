@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="canned" revision="eleven" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="canned" revision="eleven" />
+  <project path="device/canned/sepolicy" name="device_canned_sepolicy" remote="canned" revision="eleven" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="canned" revision="eleven" />
+
+</manifest>

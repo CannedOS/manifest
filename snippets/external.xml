@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="canned" revision="eleven" />
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="canned" revision="eleven" />
+  <project path="external/libcxx" name="external_libcxx" remote="canned" revision="eleven" />
+  <project path="external/selinux" name="external_selinux" remote="canned" revision="eleven" />
+  <project path="external/sqlite" name="external_sqlite" remote="canned" revision="eleven" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="canned" revision="eleven" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="canned" revision="eleven" />
+  <project path="external/json-c" name="android_external_json-c" remote="lineage" revision="lineage-18.1" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" revision="lineage-18.1" />
+  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="lineage" revision="lineage-18.1" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" revision="lineage-18.1" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" revision="lineage-18.1" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage" revision="lineage-18.1" />
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="lineage" revision="lineage-18.1" />  
+  <project path="external/bash" name="android_external_bash" remote="lineage" revision="lineage-17.1" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="lineage" revision="lineage-17.1" />
+  <project path="external/htop" name="android_external_htop" remote="lineage" revision="lineage-17.1" />
+  <project path="external/libncurses" name="android_external_libncurses" remote="lineage" revision="lineage-17.1" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" revision="lineage-17.1" />
+  <project path="external/nano" name="android_external_nano" remote="lineage" revision="lineage-17.1" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" revision="lineage-17.1" />
+  <project path="external/p7zip" name="android_external_p7zip" remote="lineage" revision="lineage-17.1" />
+  <project path="external/pigz" name="android_external_pigz" remote="lineage" revision="lineage-17.1" />
+  <project path="external/rsync" name="android_external_rsync" remote="lineage" revision="lineage-17.1" />
+  <project path="external/unrar" name="android_external_unrar" remote="lineage" revision="lineage-17.1" />
+  <project path="external/vim" name="android_external_vim" remote="lineage" revision="lineage-17.1"/>
+  <project path="external/scudo" name="android_external_scudo" remote="common" />
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- CannedOS remote -->
+  <remote name="canned"
+          fetch="https://github.com/CannedOS"
+          revision="refs/heads/eleven"
+          sync-j="8" />
+  
+  <!-- CannedOS Devices -->
+  <remote name="devices"
+          fetch="https://github.com/CannedOS-Devices"
+          revision="refs/heads/eleven"
+          sync-j="8" />
+
+  <!-- LegionOS remote -->
+  <remote name="legion"
+          fetch="https://github.com/LegionOS"
+          revision="refs/heads/11"
+          sync-j="8" />
+
+  <!-- Lineage -->
+  <remote name="lineage" 
+          fetch="https://github.com/LineageOS" 
+          revision="refs/heads/lineage-18.1"
+          sync-j="8" />
+
+  <!-- AOSP_Common -->
+  <remote name="common"
+          fetch="https://github.com/AOSP-Common"
+          revision="refs/heads/11.0"
+          sync-j="8" />
+
+  <!-- Github -->
+  <remote name="github"
+          fetch="https://github.com/" />
+	   
+  <!-- Removed projects -->	   
+  <include name="remove.xml" />
+
+  <!-- Imported projects -->
+  <include name="snippets/build.xml" />
+  <include name="snippets/device.xml" />
+  <include name="snippets/external.xml" />
+  <include name="snippets/frameworks.xml" />
+  <include name="snippets/hals.xml" />
+  <include name="snippets/packages.xml" />
+  <include name="snippets/prebuilts.xml" />
+  <include name="snippets/system.xml" />
+  <include name="snippets/vendor.xml" />
+
+</manifest>

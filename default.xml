@@ -832,4 +832,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- manifest control file -->
+  <include name="canned.xml" />
+
 </manifest>

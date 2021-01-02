@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="build/make" name="build_make" remote="canned" revision="eleven" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+      <linkfile src="core" dest="build/core" />
+      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+      <linkfile src="target" dest="build/target" />
+      <linkfile src="tools" dest="build/tools" />
+  </project>
+    
+  <project path="build/soong" name="build_soong" remote="canned" revision="eleven" >
+      <linkfile src="root.bp" dest="Android.bp" />
+      <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+     
+  <project path="art" name="android_art" remote="canned" revision="eleven" /> 
+  <project path="bionic" name="bionic" remote="canned" revision="eleven" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="canned" revision="eleven" />
+  <project path="tools/metalava" name="tools_metalava" remote="canned" revision="eleven" />
+  <project path="manifest" name="manifest" remote="canned" />
+
+</manifest>
