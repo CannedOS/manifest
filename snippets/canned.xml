@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <remote  name="canned"
+           fetch="https://github.com/CannedOS"
+           revision="refs/heads/ravioli" />
+  
+  <remote  name="CannedOS-Devices"
+           fetch="https://github.com/CannedOS-devices"
+           revision="refs/heads/ravioli" />
+
+  <remote  name="tos"
+           fetch="https://github.com/TitaniumOS"
+           revision="refs/heads/eleven" />
+
+  <remote name="github/hentaiOS"
+           fetch="https://github.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <!-- Device repos -->
+  <project path="device/canned/sepolicy" name="device_canned_sepolicy" remote="canned" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy-legacy" remote="canned" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="canned" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="canned" />
+
+  <!-- External repos -->
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="canned" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="canned" />
+  <project path="external/guice" name="external_guice" remote="canned" />
+  <project path="external/libcxx" name="external_libcxx" remote="canned" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="canned" />
+  <project path="external/libpng" name="external_libpng" remote="canned" />
+  <project path="external/selinux" name="external_selinux" remote="canned" />
+  <project path="external/sqlite" name="external_sqlite" remote="canned" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="canned" />
+  <project path="external/zlib" name="external_zlib" remote="canned" />
+  <project path="external/exfat" name="external_exfat" remote="tos" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="canned" />
+  <project path="frameworks/base" name="frameworks_base" remote="canned" />
+  <project path="frameworks/native" name="frameworks_native" remote="canned" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="canned" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="canned" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="canned" />
+
+  <!-- General repos -->
+  <project path="art" name="art" remote="canned" />
+  <project path="bionic" name="bionic" remote="canned" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="canned" />
+  <project path="build/make" name="build_make" remote="canned" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="build_blueprint" remote="canned" />
+  <project path="build/soong" name="build_soong" remote="canned" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="manifest" name="manifest" remote="canned" />
+  <project path="vendor/canned" name="vendor_canned" remote="canned" />
+
+  <!-- CAF Hals -->
+  <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/canned/interfaces" name="hardware_canned_interfaces" remote="canned" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="canned" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="canned" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="canned" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="canned" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="canned" />
+  <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" remote="canned" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="canned" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="canned" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="canned" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="canned" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="canned" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="canned" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="canned" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="canned" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" clone-depth="1" remote="tos" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="tos" clone-depth="1" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="canned" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="canned" />
+
+  <!-- Services repos -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="canned" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="canned" />
+
+  <!-- System repos -->
+  <project path="system/bt" name="system_bt" remote="canned" />
+  <project path="system/core" name="system_core" remote="canned" />
+  <project path="system/incremental_delivery" name="system_incremental_delivery" remote="canned" />
+  <project path="system/netd" name="system_netd" remote="canned" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="canned" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="canned" />
+  <project path="system/update_engine" name="system_update_engine" remote="canned" />
+  <project path="system/vold" name="system_vold" remote="canned" />
+
+  <!-- Tools repos -->
+  <project path="tools/metalava" name="tools_metalava" remote="canned" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="tos" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="tos" />
+
+</manifest>
