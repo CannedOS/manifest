@@ -92,6 +92,7 @@
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="canned" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="canned" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="canned" />
+  <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="canned" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="canned" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="canned" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="canned" />
