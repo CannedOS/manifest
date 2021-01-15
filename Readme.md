@@ -3,6 +3,14 @@
 
 To get started with manifest/CannedOS, you'll need to get familiar with [Repo](https://source.android.com/source/using-repo.html) and Version Control with [Git](https://source.android.com/source/version-control.html).
 
+To set up build environment:
+```
+sudo apt update && sudo apt upgrade
+git clone https://github.com/akhilnarang/scripts --depth 1
+cd scripts
+bash setup/android_build_env.sh
+```
+
 To initialize your local repository, use a command like this:
 
 ```bash
@@ -33,7 +41,7 @@ From root directory of project, perform following commands in terminal
 
 ```bash
 $ . build/envsetup.sh
-$ lunch canned_<device_codename>-buildtype
+$ lunch canned_<device_codename>-eng
 $ mka canned
 ```
 ---------------------------------------------------------------------------------------
@@ -48,7 +56,8 @@ $ mka canned
 
  * [**AOSP**](https://github.com/AOSP)
  * [**LineageOS**](https://github.com/LineageOS)
+ * [**Evolution-X**](https://github.com/Evolution-X)
  * [**ManyMore from where cherry-picked from**](https://github.com)
 
 ---------------------------------------------------------------------------------------
-'+
+
