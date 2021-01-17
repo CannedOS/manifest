@@ -1,3 +1,4 @@
+ ![CannedOS](https://raw.githubusercontent.com/CannedOS/manifest/ravioli/manifest.jpg)
  Getting Started:
  ==============
 
