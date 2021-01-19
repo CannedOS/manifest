@@ -91,6 +91,7 @@
 
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="canned" />
+  <project path="packages/apps/CannedFood" name="packages_apps_CannedFood" remote="canned" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="canned" />
   <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" remote="canned" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="canned" />
