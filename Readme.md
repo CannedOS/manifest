@@ -15,13 +15,13 @@ bash setup/android_build_env.sh
 To initialize your local repository, use a command like this:
 
 ```bash
-repo init -u https://github.com/CannedOS/manifest.git -b ravioli
+repo init -u git://github.com/CannedOS/manifest.git -b ravioli
 
 ```
 You can alternatively use this command to save some space and time :
 
 ```bash
-repo init --depth=1 -u https://github.com/CannedOS/manifest.git -b ravioli
+repo init --depth=1 -u git://github.com/CannedOS/manifest.git -b ravioli
 
 ```
 
